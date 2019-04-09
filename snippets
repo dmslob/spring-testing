@@ -1,0 +1,8 @@
+
+@RunWith(SpringRunner.class)
+@SpringBootTest (webEnvironment = WebEnvironment.NONE)
+@ContextConfiguration(classes = {ServiceIntegrationTestConfig.class})
+
+@Configuration
+@ComponentScan(basePackages = {"com.dmslob.testing.service", "com.dmslob.testing.data.repos"})
+
