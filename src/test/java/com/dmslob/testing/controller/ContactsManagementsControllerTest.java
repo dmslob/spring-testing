@@ -1,11 +1,15 @@
 package com.dmslob.testing.controller;
 
+import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.dmslob.testing.domain.CustomerContact;
@@ -42,12 +46,19 @@ public class ContactsManagementsControllerTest {
     }
 
     @Test
+    public void shouldReturnDefaultMessage() throws Exception {
+        this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString("Hello World")));
+    }
+
+    @Test
     public void testAddContactHappyPath() {
         CustomerContact aContact = new CustomerContact();
         aContact.setFirstName("Jenny");
         aContact.setLastName("Johnson");
         // POST our CustomerContact form bean to the controller; check the outcome
         String outcome = contactsManagementController.processAddContactSubmitFail(aContact);
+        System.out.println(outcome);
         // Assert THAT the outcome is as expected
         assertThat(outcome, is(equalTo("success")));
     }

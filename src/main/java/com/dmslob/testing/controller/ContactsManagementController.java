@@ -5,10 +5,7 @@ import com.dmslob.testing.domain.CustomerContact;
 import com.dmslob.testing.service.ContactsManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class ContactsManagementController {
@@ -44,5 +41,11 @@ public class ContactsManagementController {
                                                   @ModelAttribute ContactImportantOccasion anOccasion) {
         // implement this
         return "/addContactOccasionForm";
+    }
+
+    @RequestMapping("/")
+    public @ResponseBody
+    String greeting() {
+        return "Hello World";
     }
 }
