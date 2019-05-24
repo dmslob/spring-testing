@@ -1,4 +1,4 @@
-package com.dmslob.testing.domain;
+package com.dmslob.domain;
 
 public class ContactImportantOccasion {
 

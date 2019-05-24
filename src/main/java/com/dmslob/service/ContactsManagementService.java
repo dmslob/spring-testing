@@ -1,7 +1,7 @@
-package com.dmslob.testing.service;
+package com.dmslob.service;
 
-import com.dmslob.testing.data.repos.CustomerContactRepository;
-import com.dmslob.testing.domain.CustomerContact;
+import com.dmslob.data.repos.CustomerContactRepository;
+import com.dmslob.domain.CustomerContact;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

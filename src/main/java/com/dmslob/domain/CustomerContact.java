@@ -1,4 +1,4 @@
-package com.dmslob.testing.domain;
+package com.dmslob.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

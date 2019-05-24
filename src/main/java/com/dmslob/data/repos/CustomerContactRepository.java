@@ -1,6 +1,6 @@
-package com.dmslob.testing.data.repos;
+package com.dmslob.data.repos;
 
-import com.dmslob.testing.domain.CustomerContact;
+import com.dmslob.domain.CustomerContact;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CustomerContactRepository extends CrudRepository<CustomerContact, Long> {

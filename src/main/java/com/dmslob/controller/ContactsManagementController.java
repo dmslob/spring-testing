@@ -1,8 +1,8 @@
-package com.dmslob.testing.controller;
+package com.dmslob.controller;
 
-import com.dmslob.testing.domain.ContactImportantOccasion;
-import com.dmslob.testing.domain.CustomerContact;
-import com.dmslob.testing.service.ContactsManagementService;
+import com.dmslob.domain.ContactImportantOccasion;
+import com.dmslob.domain.CustomerContact;
+import com.dmslob.service.ContactsManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

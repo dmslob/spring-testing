@@ -1,4 +1,4 @@
-package com.dmslob.testing.controller;
+package com.dmslob.controller;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.*;
@@ -12,8 +12,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.dmslob.testing.domain.CustomerContact;
-import com.dmslob.testing.service.ContactsManagementService;
+import com.dmslob.domain.CustomerContact;
+import com.dmslob.service.ContactsManagementService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

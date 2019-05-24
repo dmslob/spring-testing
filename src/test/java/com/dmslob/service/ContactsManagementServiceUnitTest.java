@@ -1,11 +1,11 @@
-package com.dmslob.testing.service;
+package com.dmslob.service;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.when;
 
-import com.dmslob.testing.data.repos.CustomerContactRepository;
-import com.dmslob.testing.domain.CustomerContact;
+import com.dmslob.data.repos.CustomerContactRepository;
+import com.dmslob.domain.CustomerContact;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

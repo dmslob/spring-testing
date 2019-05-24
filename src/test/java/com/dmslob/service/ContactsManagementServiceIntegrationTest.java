@@ -1,9 +1,9 @@
-package com.dmslob.testing.service;
+package com.dmslob.service;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import com.dmslob.testing.domain.CustomerContact;
+import com.dmslob.domain.CustomerContact;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

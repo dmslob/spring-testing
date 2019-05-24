@@ -1,10 +1,10 @@
-package com.dmslob.testing.controller;
+package com.dmslob.controller;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-import com.dmslob.testing.domain.CustomerContact;
+import com.dmslob.domain.CustomerContact;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

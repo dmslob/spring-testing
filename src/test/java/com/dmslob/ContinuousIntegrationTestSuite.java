@@ -1,6 +1,6 @@
-package com.dmslob.testing;
+package com.dmslob;
 
-import com.dmslob.testing.controller.ContactsManagementControllerIntegrationTest;
+import com.dmslob.controller.ContactsManagementControllerIntegrationTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

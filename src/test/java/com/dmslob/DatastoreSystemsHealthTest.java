@@ -1,4 +1,4 @@
-package com.dmslob.testing;
+package com.dmslob;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
